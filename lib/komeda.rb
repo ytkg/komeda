@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "komeda/version"
+require_relative 'komeda/version'
 
 module Komeda
   class Error < StandardError; end
