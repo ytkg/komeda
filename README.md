@@ -1,22 +1,65 @@
 # Komeda
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/komeda`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Komeda's coffee menu data
 
 ## Installation
 
 Install the gem and add to the application's Gemfile by executing:
 
-    $ bundle add komeda
+```bash
+$ bundle add komeda
+```
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
-    $ gem install komeda
+```bash
+$ gem install komeda
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'komeda'
+```
+
+### Get all menu
+
+```ruby
+Komeda.all
+#=> [
+#     {:name=>"コメダブレンド", :description=>"厳選した豆からじっくり丁寧に抽出したコメダ珈琲店伝統の味　濃厚なフレッシュと砂糖の両方を入れるのがオススメです。"},
+#     {:name=>"アメリカン", :description=>"軽くて飲みやすく、コーヒーの旨味を楽しめます。"},
+#     ...
+#     {:name=>"クルーミーショコラ", :description=>"クリームもスポンジもチョコづくし。\n更にきざみくるみとチョコチップを混ぜ込んだホイップクリームを贅沢にサンド。本商品に使用しているチーズは加熱処理済みです。"},
+#     {:name=>"りんごーるタルト", :description=>"さっぱりとしたりんご味のクリームの上にシャキシャキ食感のリンゴ果肉と\n" + "彩り鮮やかなりんごソースをたっぷりのせたオールりんごなデザート。"}
+#   ]
+```
+
+### Get drink menu
+
+```ruby
+Komeda.drinks
+#=> [
+#     {:name=>"コメダブレンド", :description=>"厳選した豆からじっくり丁寧に抽出したコメダ珈琲店伝統の味　濃厚なフレッシュと砂糖の両方を入れるのがオススメです。"},
+#     {:name=>"アメリカン", :description=>"軽くて飲みやすく、コーヒーの旨味を楽しめます。"},
+#     ...
+#     {:name=>"クリームソーダ　でらたっぷりサイズ", :description=>"でらたっぷり約2倍！クリームソーダをでらたっぷりサイズでお楽しみください。※販売は店舗により異なります。※メロンソーダにメロン果汁は含まれておりません。"},
+#     {:name=>"アップルジュース", :description=>"りんごのおいしさをぎゅっと濃縮したさっぱりとした味わいです。"}
+#   ]
+```
+
+### Get food menu
+
+```ruby
+Komeda.foods
+#=> [
+#     {:name=>"ホットドッグ", :description=>"たっぷりコールスローとパリッとウインナーを特製ドッグパンで挟みました。"},
+#     {:name=>"フィッシュフライバーガー", :description=>"タルタルソースとチーズが絶妙にマッチ。\n本商品に使用しているチーズは加熱処理済みです。"},
+#     ...
+#     {:name=>"ジャーマン（沖縄限定）", :description=>"パリッとジューシーなウインナーとたっぷり野菜。\n※店舗により販売状況が異なります　詳しくは店舗にご確認ください"},
+#     {:name=>"手作りたまごドッグ", :description=>"自家製たまごペーストとシャキッとレタスのハーモニーをお楽しみください。"}
+#   ]
+```
 
 ## Development
 
@@ -26,7 +69,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/komeda. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/komeda/blob/main/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/ytkg/komeda. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/ytkg/komeda/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -34,4 +77,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Komeda project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/komeda/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the Komeda project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/ytkg/komeda/blob/main/CODE_OF_CONDUCT.md).
