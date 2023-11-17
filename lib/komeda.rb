@@ -7,23 +7,13 @@ require_relative 'komeda/item'
 require_relative 'komeda/version'
 
 module Komeda
-  class << self
-    def method_missing(name, *args, &block)
-      if (menu = menus[name])
-        menu.map { |item| Komeda::Item[item.except(:id, :updated_at)] }
-      else
-        super(name, *args, &block)
-      end
-    end
+  MENUS_FILE_PATH = './config/menus.yaml'
 
-    def respond_to_missing?(name, include_private)
-      menus[name] ? true : super(name, include_private)
-    end
+  menus = YAML.load_file(MENUS_FILE_PATH, aliases: true, permitted_classes: [Time]).deep_symbolize_keys
 
-    private
-
-    def menus
-      @menus ||= YAML.load_file('./config/menus.yaml', aliases: true, permitted_classes: [Time]).deep_symbolize_keys
+  menus.each_key do |key|
+    define_singleton_method(key) do
+      menus[key].map { |item| Komeda::Item[item.except(:id, :updated_at)] }
     end
   end
 end
