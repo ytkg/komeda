@@ -13,7 +13,7 @@ module Komeda
 
   menus.each_key do |key|
     define_singleton_method(key) do
-      menus[key].map { |item| Komeda::Item[item.except(:id, :updated_at)] }
+      menus[key].map { |item| Komeda::Item[item] }
     end
   end
 end
