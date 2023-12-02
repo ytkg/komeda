@@ -1,4 +1,7 @@
 # Komeda
+[![Gem Version](https://badge.fury.io/rb/komeda.svg)](https://badge.fury.io/rb/komeda)
+[![ci](https://github.com/ytkg/komeda/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ytkg/komeda/actions/workflows/ci.yml)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/ytkg/komeda/blob/main/LICENSE.txt)
 
 Komeda's coffee menu data
 
