@@ -1,0 +1,28 @@
+name: Update menu data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 9 * * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update_menu_data:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+          bundler-cache: true
+      - name: Update menu data
+        run: bundle exec ruby script/update_menu_data.rb
+      - uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: Update menu data
+          delete-branch: true
+          title: Update menu data
