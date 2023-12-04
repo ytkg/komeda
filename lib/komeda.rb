@@ -7,7 +7,7 @@ require_relative 'komeda/item'
 require_relative 'komeda/version'
 
 module Komeda
-  MENUS_FILE_PATH = './config/menus.yaml'
+  MENUS_FILE_PATH = "#{File.dirname(__FILE__)}/../config/menus.yaml"
 
   menus = YAML.load_file(MENUS_FILE_PATH, aliases: true, permitted_classes: [Time]).deep_symbolize_keys
 
