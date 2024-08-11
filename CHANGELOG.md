@@ -1,3 +1,6 @@
+## [v0.2.0](https://github.com/ytkg/komeda/compare/v0.1.14...v0.2.0) - 2024-08-11
+- Add id to menu data by @ytkg in https://github.com/ytkg/komeda/pull/36
+
 ## [v0.1.14](https://github.com/ytkg/komeda/compare/v0.1.13...v0.1.14) - 2024-08-11
 - Update menu data by @github-actions in https://github.com/ytkg/komeda/pull/34
 
