@@ -21,7 +21,7 @@ jobs:
           bundler-cache: true
       - name: Update menu data
         run: bundle exec ruby script/update_menu_data.rb
-      - uses: peter-evans/create-pull-request@v6
+      - uses: peter-evans/create-pull-request@v7
         with:
           commit-message: Update menu data
           delete-branch: true
