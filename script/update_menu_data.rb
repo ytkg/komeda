@@ -36,7 +36,7 @@ class DataUpdater
 
         next if category_name.nil?
 
-        item = row.slice('id', 'name', 'description')
+        item = row.slice('id', 'name', 'description', 'photo_url')
 
         hash['all'].push(item)
         hash[category_name].push(item)
