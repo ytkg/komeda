@@ -1,3 +1,6 @@
+## [v0.3.0](https://github.com/ytkg/komeda/compare/v0.2.16...v0.3.0) - 2025-04-14
+- Add photo_url to menu data by @ytkg in https://github.com/ytkg/komeda/pull/71
+
 ## [v0.2.16](https://github.com/ytkg/komeda/compare/v0.2.15...v0.2.16) - 2025-03-29
 - Update menu data by @github-actions in https://github.com/ytkg/komeda/pull/69
 
