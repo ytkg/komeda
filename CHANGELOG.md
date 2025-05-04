@@ -1,3 +1,7 @@
+## [v0.3.2](https://github.com/ytkg/komeda/compare/v0.3.1...v0.3.2) - 2025-05-04
+- add workflow for release by @ytkg in https://github.com/ytkg/komeda/pull/76
+- Update menu data by @github-actions in https://github.com/ytkg/komeda/pull/75
+
 ## [v0.3.1](https://github.com/ytkg/komeda/compare/v0.3.0...v0.3.1) - 2025-04-29
 - Update menu data by @github-actions in https://github.com/ytkg/komeda/pull/73
 
