@@ -2,8 +2,8 @@ name: Release
 
 on:
   push:
-    tags:
-      - v*
+    #  tags:
+    #  - v*
   workflow_dispatch:
 
 jobs:
@@ -19,4 +19,11 @@ jobs:
         with:
           bundler-cache: true
           ruby-version: 3.4
-      - uses: rubygems/release-gem@v1
+      - run: |
+          git fetch --depth 1
+          #export GH_TOKEN=${{ secrets.GITHUB_TOKEN }}
+          #LATEST_TAG=$(gh api repos/${GITHUB_REPOSITORY}/tags | jq -r '.[0].name')
+          #echo "Latest tag is $LATEST_TAG"
+          #git fetch --depth=1 origin tag ${LATEST_TAG}
+      - run: git tag
+      #- uses: rubygems/release-gem@v1
