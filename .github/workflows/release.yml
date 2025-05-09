@@ -2,8 +2,8 @@ name: Release
 
 on:
   push:
-    tags:
-      - v*
+    #  tags:
+    #  - v*
   workflow_dispatch:
 
 jobs:
@@ -14,9 +14,13 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v4
+        #  with:
+        #  fetch-depth: 0
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
           ruby-version: 3.4
-      - uses: rubygems/release-gem@v1
+      - run: git fetch --tags
+      - run: git tag
+      #- uses: rubygems/release-gem@v1
