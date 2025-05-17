@@ -1,3 +1,6 @@
+## [v0.4.1](https://github.com/ytkg/komeda/compare/v0.4.0...v0.4.1) - 2025-05-17
+- fix: release workflow by @ytkg in https://github.com/ytkg/komeda/pull/81
+
 ## [v0.4.0](https://github.com/ytkg/komeda/compare/v0.3.2...v0.4.0) - 2025-05-08
 - Drop support ruby 2.6 by @ytkg in https://github.com/ytkg/komeda/pull/78
 - Update menu data by @github-actions in https://github.com/ytkg/komeda/pull/80
