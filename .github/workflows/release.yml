@@ -2,8 +2,10 @@ name: Release
 
 on:
   push:
-    tags:
-      - v*
+    branches:
+      - main
+    paths:
+      - lib/komeda/version.rb
   workflow_dispatch:
 
 jobs:
