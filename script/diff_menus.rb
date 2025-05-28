@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require 'open-uri'
 require 'yaml'
 
 def load_menus(source)
-  content = URI.open(source).read
+  content = URI.open(source).read # rubocop:disable Security/Open
   YAML.safe_load(content, aliases: true, symbolize_names: true)
 end
 
