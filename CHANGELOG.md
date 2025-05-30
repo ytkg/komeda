@@ -1,3 +1,10 @@
+## [v0.4.1](https://github.com/ytkg/komeda/compare/v0.4.0...v0.4.1) - 2025-05-30
+- fix: release workflow by @ytkg in https://github.com/ytkg/komeda/pull/81
+- Add diff menus reporter workflow by @ytkg in https://github.com/ytkg/komeda/pull/83
+- Fix Rubocop offenses by @ytkg in https://github.com/ytkg/komeda/pull/84
+- Change workflow trigger from pull_request to pull_request_target by @ytkg in https://github.com/ytkg/komeda/pull/86
+- Update menu data by @github-actions in https://github.com/ytkg/komeda/pull/87
+
 ## [v0.4.0](https://github.com/ytkg/komeda/compare/v0.3.2...v0.4.0) - 2025-05-08
 - Drop support ruby 2.6 by @ytkg in https://github.com/ytkg/komeda/pull/78
 - Update menu data by @github-actions in https://github.com/ytkg/komeda/pull/80
