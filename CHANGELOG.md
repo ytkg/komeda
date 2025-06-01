@@ -1,3 +1,6 @@
+## [v0.4.2](https://github.com/ytkg/komeda/compare/v0.4.1...v0.4.2) - 2025-06-01
+- Update menu data by @github-actions in https://github.com/ytkg/komeda/pull/88
+
 ## [v0.4.1](https://github.com/ytkg/komeda/compare/v0.4.0...v0.4.1) - 2025-05-30
 - fix: release workflow by @ytkg in https://github.com/ytkg/komeda/pull/81
 - Add diff menus reporter workflow by @ytkg in https://github.com/ytkg/komeda/pull/83
