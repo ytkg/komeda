@@ -22,7 +22,13 @@ jobs:
       - name: Update menu data
         run: bundle exec ruby script/update_menu_data.rb
       - uses: peter-evans/create-pull-request@v7
+        id: create-pull-request
         with:
           commit-message: Update menu data
           delete-branch: true
           title: Update menu data
+      - name: Comments
+        if: ${{ steps.create-pull-request.outputs.pull-request-number }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh pr comment ${{ steps.create-pull-request.outputs.pull-request-number }} -b "$(ruby script/diff_menus.rb)" --repo ${{ github.repository }}
