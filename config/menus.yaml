@@ -490,28 +490,28 @@ all:
   description: |-
     カラッと揚がったプリプリエビ3尾とたっぷり野菜をお楽しみください。
     ※店舗により販売状況が異なります。詳しくは店舗にご確認ください。
-  photo_url: https://assets.komeda.co.jp/eos/menu/40878.jpg
+  photo_url: https://assets.komeda.co.jp/eos/menu/44454.jpg
 - &94
   id: '10135'
   name: ヒレカツ
   description: |-
     柔らかヒレ肉をサクッと揚げたボリューム満点まんぷくメニューです。
     ※店舗により販売状況が異なります。詳しくは店舗にご確認ください。
-  photo_url: https://assets.komeda.co.jp/eos/menu/40879.jpg
+  photo_url: https://assets.komeda.co.jp/eos/menu/44455.jpg
 - &95
   id: '10137'
   name: ジャーマン
   description: |-
     パリッとジューシーなウインナーとたっぷり野菜をお楽しみください。
     ※店舗により販売状況が異なります。詳しくは店舗にご確認ください。
-  photo_url: https://assets.komeda.co.jp/eos/menu/40882.jpg
+  photo_url: https://assets.komeda.co.jp/eos/menu/44453.jpg
 - &96
   id: '10138'
   name: ヒレカツ　ミニサイズ
   description: |-
     柔らかヒレ肉をサクッと揚げました。小腹がすいたときにぴったりのミニサイズでどうぞ。
     ※店舗により販売状況が異なります。詳しくは店舗にご確認ください。
-  photo_url: https://assets.komeda.co.jp/eos/menu/40880.jpg
+  photo_url: https://assets.komeda.co.jp/eos/menu/44456.jpg
 - &97
   id: '10155'
   name: たまとまレタスサンド　コメチキ2ケ付き（単品）
