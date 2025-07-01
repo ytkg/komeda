@@ -1,3 +1,7 @@
+## [v0.4.5](https://github.com/ytkg/komeda/compare/v0.4.4...v0.4.5) - 2025-07-01
+- Modify new menu data source by @ytkg in https://github.com/ytkg/komeda/pull/97
+- Update menu data by @github-actions in https://github.com/ytkg/komeda/pull/96
+
 ## [v0.4.4](https://github.com/ytkg/komeda/compare/v0.4.3...v0.4.4) - 2025-06-26
 - Megre Diff menus reporter workflow to Update menu data workflow by @ytkg in https://github.com/ytkg/komeda/pull/92
 - Update menu data by @github-actions in https://github.com/ytkg/komeda/pull/94
