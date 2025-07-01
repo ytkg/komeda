@@ -26,7 +26,7 @@ def print_diff(title, items)
 end
 
 remote_url = 'https://raw.githubusercontent.com/ytkg/komeda/main/config/menus.yaml'
-local_path = 'config/menus.yaml'
+local_path = 'https://raw.githubusercontent.com/ytkg/komeda/create-pull-request/patch/config/menus.yaml'
 
 remote_menus = load_menus(remote_url)
 local_menus = load_menus(local_path)
