@@ -23,4 +23,6 @@ jobs:
         with:
           bundler-cache: true
           ruby-version: 3.4
+      - name: Sleep 30 seconds before release
+        run: sleep 30
       - uses: rubygems/release-gem@v1
