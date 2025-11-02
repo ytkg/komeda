@@ -1,3 +1,7 @@
+## [v0.4.16](https://github.com/ytkg/komeda/compare/v0.4.15...v0.4.16) - 2025-11-02
+- Move release sleep before checkout by @ytkg in https://github.com/ytkg/komeda/pull/122
+- Update menu data by @github-actions[bot] in https://github.com/ytkg/komeda/pull/124
+
 ## [v0.4.15](https://github.com/ytkg/komeda/compare/v0.4.14...v0.4.15) - 2025-10-29
 - Update menu data by @github-actions[bot] in https://github.com/ytkg/komeda/pull/120
 
