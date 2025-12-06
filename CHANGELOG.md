@@ -1,3 +1,6 @@
+## [v0.4.19](https://github.com/ytkg/komeda/compare/v0.4.18...v0.4.19) - 2025-12-06
+- Update menu data by @github-actions[bot] in https://github.com/ytkg/komeda/pull/130
+
 ## [v0.4.18](https://github.com/ytkg/komeda/compare/v0.4.17...v0.4.18) - 2025-11-26
 - Bump actions/checkout from 5 to 6 by @dependabot[bot] in https://github.com/ytkg/komeda/pull/127
 - Update menu data by @github-actions[bot] in https://github.com/ytkg/komeda/pull/129
