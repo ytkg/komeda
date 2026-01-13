@@ -1,3 +1,8 @@
+## [v0.4.21](https://github.com/ytkg/komeda/compare/v0.4.20...v0.4.21) - 2026-01-13
+- Update menu data by @github-actions[bot] in https://github.com/ytkg/komeda/pull/135
+- Update menu data by @github-actions[bot] in https://github.com/ytkg/komeda/pull/137
+- Update menu data by @github-actions[bot] in https://github.com/ytkg/komeda/pull/138
+
 ## [v0.4.20](https://github.com/ytkg/komeda/compare/v0.4.19...v0.4.20) - 2025-12-12
 - Bump peter-evans/create-pull-request from 7 to 8 by @dependabot[bot] in https://github.com/ytkg/komeda/pull/132
 - Update menu data by @github-actions[bot] in https://github.com/ytkg/komeda/pull/133
