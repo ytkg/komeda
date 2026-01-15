@@ -1,3 +1,6 @@
+## [v0.4.22](https://github.com/ytkg/komeda/compare/v0.4.21...v0.4.22) - 2026-01-15
+- Update menu data by @github-actions[bot] in https://github.com/ytkg/komeda/pull/139
+
 ## [v0.4.21](https://github.com/ytkg/komeda/compare/v0.4.20...v0.4.21) - 2026-01-13
 - Update menu data by @github-actions[bot] in https://github.com/ytkg/komeda/pull/135
 - Update menu data by @github-actions[bot] in https://github.com/ytkg/komeda/pull/137
