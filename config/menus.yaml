@@ -841,6 +841,11 @@ all:
     ※お召し上がりの際は、火傷にご注意ください。
     ※本商品に使用しているチーズは加熱処理済みです。
   photo_url: https://assets.komeda.co.jp/eos/menu/44968.jpg
+- &138
+  id: '11614'
+  name: 珈琲所のプリン（単品）
+  description: コクあまプリンを自家製珈琲ジェリーと楽しむのがコメダ流
+  photo_url: https://assets.komeda.co.jp/eos/menu/45154.jpg
 drinks:
 - *1
 - *2
@@ -981,3 +986,4 @@ desserts:
 - *135
 - *136
 - *137
+- *138
