@@ -619,31 +619,31 @@ all:
   name: コメチキ(6ケ)
   description: フレッシュレモンをしぼって食べる骨なしジューシーチキン。
   photo_url: https://assets.komeda.co.jp/eos/menu/40176.jpg
-- &126
+- &127
   id: '10213'
   name: シロノワール（単品）
   description: |-
     あつあつひえひえの温度差が楽しい、コメダの名物デザートです。
     ※シロノワールのシロップには「はちみつ」が含まれているため、1歳未満の乳児には与えないでください。
   photo_url: https://assets.komeda.co.jp/eos/menu/40186.jpg
-- &127
+- &128
   id: '10216'
   name: ミニシロノワール（単品）
   description: |-
     あつあつひえひえの温度差が楽しい、コメダの名物デザートをミニサイズでどうぞ。おひとり様や、食後のデザートにおすすめです。
     ※ミニシロノワールのシロップには「はちみつ」が含まれているため、1歳未満の乳児には与えないでください。
   photo_url: https://assets.komeda.co.jp/eos/menu/40187.jpg
-- &128
+- &129
   id: '10239'
   name: ソフトクリーム
   description: お皿にのったソフトクリームをスプーンで食べるのがコメダ流です。
   photo_url: https://assets.komeda.co.jp/eos/menu/40188.jpg
-- &129
+- &130
   id: '10240'
   name: 珈琲ジェリー
   description: 自慢のコーヒーで作った自家製ジェリーにバナナとソフトクリームを添えました。ほろ苦い美味しさをどうぞ。
   photo_url: https://assets.komeda.co.jp/eos/menu/40189.jpg
-- &130
+- &131
   id: '10241'
   name: クロネージュ（単品）
   description: |-
@@ -744,7 +744,7 @@ all:
     とろみがついている分、冷めにくいのでゆったりとくつろぎの時間をお楽しみいただけます。
     ※とろみコーヒーは店舗限定商品です。
   photo_url: https://assets.komeda.co.jp/eos/menu/42339.jpg
-- &131
+- &132
   id: '11073'
   name: 純栗ぃむ（単品）
   description: 栗のおいしさが詰まったコメダ珈琲店秋の定番。
@@ -771,19 +771,19 @@ all:
     とろける味わい、芳醇な香りとレーズンの甘みが重なり合う贅沢な大人のフローズンドリンクです。
     ※お酒の風味が香る商品です（1食あたりのアルコール分 約0.04％：推定値）ご注意ください。
   photo_url: https://assets.komeda.co.jp/eos/menu/44790.jpg
-- &132
+- &133
   id: '11536'
   name: アプリコットショコラ（単品）
   description: しっとりしたショコラ生地の重厚感にアプリコットの酸味が相まった華やかで深みのある味わい。
   photo_url: https://assets.komeda.co.jp/eos/menu/44891.jpg
-- &133
+- &134
   id: '11538'
   name: ごまいもんぶらん（単品）
   description: |-
     鳴門金時クリームのまろやかな甘みと、中に入った黒ごまホイップの香ばしさが調和する一品。
     ※原材料由来のさつまいもの繊維などが含まれる場合がございます。
   photo_url: https://assets.komeda.co.jp/eos/menu/44893.jpg
-- &134
+- &135
   id: '11540'
   name: ごちそうカスタード（単品）
   description: |-
@@ -822,11 +822,19 @@ all:
     ※お召し上がりの際は、火傷にご注意ください。
     ※本商品に使用しているチーズは加熱処理済みです。
   photo_url: https://assets.komeda.co.jp/eos/menu/44968.jpg
-- &135
+- &136
   id: '11614'
   name: 珈琲所のプリン（単品）
   description: コクあまプリンを自家製珈琲ジェリーと楽しむのがコメダ流
   photo_url: https://assets.komeda.co.jp/eos/menu/45154.jpg
+- &126
+  id: '11631'
+  name: ムッシュコメダ
+  description: |-
+    とろけるチーズとホワイトソース、ペッパーポークを挟んだクロックムッシュ。
+    ピリッと黒胡椒が効いた一品。
+    ※本商品に使用しているチーズは加熱処理済みです。
+  photo_url: https://assets.komeda.co.jp/eos/menu/45236.jpg
 drinks:
 - *1
 - *2
@@ -954,8 +962,8 @@ foods:
 - *123
 - *124
 - *125
-desserts:
 - *126
+desserts:
 - *127
 - *128
 - *129
@@ -965,3 +973,4 @@ desserts:
 - *133
 - *134
 - *135
+- *136
