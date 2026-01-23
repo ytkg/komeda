@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 module Komeda
-  VERSION = '0.4.24'
+  VERSION = '0.4.25'
 end
