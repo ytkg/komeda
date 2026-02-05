@@ -619,31 +619,31 @@ all:
   name: コメチキ(6ケ)
   description: フレッシュレモンをしぼって食べる骨なしジューシーチキン。
   photo_url: https://assets.komeda.co.jp/eos/menu/40176.jpg
-- &127
+- &126
   id: '10213'
   name: シロノワール（単品）
   description: |-
     あつあつひえひえの温度差が楽しい、コメダの名物デザートです。
     ※シロノワールのシロップには「はちみつ」が含まれているため、1歳未満の乳児には与えないでください。
   photo_url: https://assets.komeda.co.jp/eos/menu/40186.jpg
-- &128
+- &127
   id: '10216'
   name: ミニシロノワール（単品）
   description: |-
     あつあつひえひえの温度差が楽しい、コメダの名物デザートをミニサイズでどうぞ。おひとり様や、食後のデザートにおすすめです。
     ※ミニシロノワールのシロップには「はちみつ」が含まれているため、1歳未満の乳児には与えないでください。
   photo_url: https://assets.komeda.co.jp/eos/menu/40187.jpg
-- &129
+- &128
   id: '10239'
   name: ソフトクリーム
   description: お皿にのったソフトクリームをスプーンで食べるのがコメダ流です。
   photo_url: https://assets.komeda.co.jp/eos/menu/40188.jpg
-- &130
+- &129
   id: '10240'
   name: 珈琲ジェリー
   description: 自慢のコーヒーで作った自家製ジェリーにバナナとソフトクリームを添えました。ほろ苦い美味しさをどうぞ。
   photo_url: https://assets.komeda.co.jp/eos/menu/40189.jpg
-- &131
+- &130
   id: '10241'
   name: クロネージュ（単品）
   description: |-
@@ -744,7 +744,7 @@ all:
     とろみがついている分、冷めにくいのでゆったりとくつろぎの時間をお楽しみいただけます。
     ※とろみコーヒーは店舗限定商品です。
   photo_url: https://assets.komeda.co.jp/eos/menu/42339.jpg
-- &132
+- &131
   id: '11073'
   name: 純栗ぃむ（単品）
   description: 栗のおいしさが詰まったコメダ珈琲店秋の定番。
@@ -764,19 +764,19 @@ all:
     中はしっとり外は香ばしく７種の香辛料を効かせて焼き上げたタンドリーチキンがクセになる一品
     ※やや辛めの商品です、辛い物が苦手な方やお子様は十分ご注意ください。
   photo_url: https://assets.komeda.co.jp/eos/menu/43932.jpg
-- &133
+- &132
   id: '11536'
   name: アプリコットショコラ（単品）
   description: しっとりしたショコラ生地の重厚感にアプリコットの酸味が相まった華やかで深みのある味わい。
   photo_url: https://assets.komeda.co.jp/eos/menu/44891.jpg
-- &134
+- &133
   id: '11538'
   name: ごまいもんぶらん（単品）
   description: |-
     鳴門金時クリームのまろやかな甘みと、中に入った黒ごまホイップの香ばしさが調和する一品。
     ※原材料由来のさつまいもの繊維などが含まれる場合がございます。
   photo_url: https://assets.komeda.co.jp/eos/menu/44893.jpg
-- &135
+- &134
   id: '11540'
   name: ごちそうカスタード（単品）
   description: |-
@@ -815,7 +815,7 @@ all:
     ※お召し上がりの際は、火傷にご注意ください。
     ※本商品に使用しているチーズは加熱処理済みです。
   photo_url: https://assets.komeda.co.jp/eos/menu/44968.jpg
-- &136
+- &135
   id: '11601'
   name: クラブハリエ監修 ショコラノワール（単品）
   description: |-
@@ -823,7 +823,7 @@ all:
     ザクザク食感のショコラクッキーをまとい、進化したショコラノワール。
     煌めくシュガーコーティングをまとって、再び、あなたのもとへ。※本商品には「はちみつ」を使用しているため、1歳未満の乳児には与えないでください。
   photo_url: https://assets.komeda.co.jp/eos/menu/45027.jpg
-- &137
+- &136
   id: '11602'
   name: クラブハリエ監修 ショコラノワール ミニサイズ（単品）
   description: |-
@@ -831,7 +831,7 @@ all:
     ザクザク食感のショコラクッキーをまとい、進化したショコラノワール。
     煌めくシュガーコーティングをまとって、再び、あなたのもとへ。※本商品には「はちみつ」を使用しているため、1歳未満の乳児には与えないでください。
   photo_url: https://assets.komeda.co.jp/eos/menu/45031.jpg
-- &138
+- &137
   id: '11614'
   name: 珈琲所のプリン（単品）
   description: コクあまプリンを自家製珈琲ジェリーと楽しむのがコメダ流
@@ -846,14 +846,6 @@ all:
     ※2つ切り及び4つ切りなどのカットしての提供はできません
     ※エッグオムレツは加熱加工しており、半熟のような食感を再現しています。
   photo_url: https://assets.komeda.co.jp/eos/menu/45179.jpg
-- &126
-  id: '11631'
-  name: ムッシュコメダ
-  description: |-
-    とろけるチーズとホワイトソース、ペッパーポークを挟んだクロックムッシュ。
-    ピリッと黒胡椒が効いた一品。
-    ※本商品に使用しているチーズは加熱処理済みです。
-  photo_url: https://assets.komeda.co.jp/eos/menu/45236.jpg
 drinks:
 - *1
 - *2
@@ -981,8 +973,8 @@ foods:
 - *123
 - *124
 - *125
-- *126
 desserts:
+- *126
 - *127
 - *128
 - *129
@@ -994,4 +986,3 @@ desserts:
 - *135
 - *136
 - *137
-- *138
