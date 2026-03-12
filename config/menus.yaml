@@ -744,11 +744,6 @@ all:
     とろみがついている分、冷めにくいのでゆったりとくつろぎの時間をお楽しみいただけます。
     ※とろみコーヒーは店舗限定商品です。
   photo_url: https://assets.komeda.co.jp/eos/menu/42339.jpg
-- &133
-  id: '11073'
-  name: 純栗ぃむ（単品）
-  description: 栗のおいしさが詰まったコメダ珈琲店秋の定番。
-  photo_url: https://assets.komeda.co.jp/eos/menu/44739.jpg
 - &121
   id: '11134'
   name: チーズカリートースト
@@ -764,25 +759,6 @@ all:
     中はしっとり外は香ばしく７種の香辛料を効かせて焼き上げたタンドリーチキンがクセになる一品
     ※やや辛めの商品です、辛い物が苦手な方やお子様は十分ご注意ください。
   photo_url: https://assets.komeda.co.jp/eos/menu/43932.jpg
-- &134
-  id: '11536'
-  name: アプリコットショコラ（単品）
-  description: しっとりしたショコラ生地の重厚感にアプリコットの酸味が相まった華やかで深みのある味わい。
-  photo_url: https://assets.komeda.co.jp/eos/menu/44891.jpg
-- &135
-  id: '11538'
-  name: ごまいもんぶらん（単品）
-  description: |-
-    鳴門金時クリームのまろやかな甘みと、中に入った黒ごまホイップの香ばしさが調和する一品。
-    ※原材料由来のさつまいもの繊維などが含まれる場合がございます。
-  photo_url: https://assets.komeda.co.jp/eos/menu/44893.jpg
-- &136
-  id: '11540'
-  name: ごちそうカスタード（単品）
-  description: |-
-    カラメルの香ばしさと、カスタードクリームのやさしい口どけと、味わいに心ほぐれる至福の時間。
-    ※トッピングに砕いたアーモンドを使用しています。
-  photo_url: https://assets.komeda.co.jp/eos/menu/44901.jpg
 - &65
   id: '11573'
   name: ミネストローネ
@@ -815,7 +791,7 @@ all:
     ※お召し上がりの際は、火傷にご注意ください。
     ※本商品に使用しているチーズは加熱処理済みです。
   photo_url: https://assets.komeda.co.jp/eos/menu/44968.jpg
-- &137
+- &133
   id: '11614'
   name: 珈琲所のプリン（単品）
   description: コクあまプリンを自家製珈琲ジェリーと楽しむのがコメダ流
@@ -830,7 +806,7 @@ all:
     ※2つ切り及び4つ切りなどのカットしての提供はできません
     ※エッグオムレツは加熱加工しており、半熟のような食感を再現しています。
   photo_url: https://assets.komeda.co.jp/eos/menu/45179.jpg
-- &138
+- &134
   id: '11637'
   name: メタモンのシロノワール ブルーベリーフロマージュ（単品）
   description: |-
@@ -841,7 +817,7 @@ all:
     ※本商品に使用しているチーズは加熱処理済みです
     ※第1弾ポケモン関連商品はお1人様計3食までのご注文とさせていただきます
   photo_url: https://assets.komeda.co.jp/eos/menu/45262.jpg
-- &139
+- &135
   id: '11639'
   name: メタモンのシロノワール ブルーベリーフロマージュ ミニサイズ（単品）
   description: |-
@@ -873,6 +849,32 @@ all:
     ※ピックは食べられません 小さなお子様が口に入れないように十分ご注意ください
     ※第1弾ポケモン関連商品はお1人様計3食までのご注文とさせていただきます
   photo_url: https://assets.komeda.co.jp/eos/menu/45345.jpg
+- &136
+  id: '11661'
+  name: THEベイクドチーズ（単品）
+  description: |-
+    チーズのコクと旨みを感じる深みある味わい、
+    しっとりした口当たりの王道のチーズケーキに仕上げました。※本商品に使用しているチーズは加熱処理済です
+  photo_url: https://assets.komeda.co.jp/eos/menu/45413.jpg
+- &137
+  id: '11663'
+  name: くちどけカッサータ（単品）
+  description: |-
+    5種のドライフルーツとナッツで、一口ごとに変わる味わいをくちどけの良いクリームチーズとご一緒に。
+    ※本商品に使用しているチーズは加熱処理済です　※本商品に使用しているドライフルーツはオレンジピール・チェリー・レーズン・パイン・レモンピールの5種類です
+  photo_url: https://assets.komeda.co.jp/eos/menu/45415.jpg
+- &138
+  id: '11665'
+  name: キャラメル　サレ（単品）
+  description: |-
+    雪塩®を使用した上品な甘さのキャラメルクリーム。
+    しっとりと焼き上げたクレープと重なる幸せ。※本商品に使用している食塩中に「雪塩®」49％使用
+  photo_url: https://assets.komeda.co.jp/eos/menu/45417.jpg
+- &139
+  id: '11667'
+  name: 抹茶の雫（単品）
+  description: 静岡県産一番茶の抹茶クリームで包んだ黒糖クリームのやさしい甘みとコク。
+  photo_url: https://assets.komeda.co.jp/eos/menu/45419.jpg
 drinks:
 - *1
 - *2
