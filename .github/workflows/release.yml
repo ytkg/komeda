@@ -15,11 +15,7 @@ jobs:
       contents: write
       id-token: write
     steps:
-      - name: Sleep 30 seconds before release
-        run: sleep 30
       - uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
