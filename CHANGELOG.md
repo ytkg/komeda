@@ -1,3 +1,7 @@
+## [v0.4.31](https://github.com/ytkg/komeda/compare/v0.4.30...v0.4.31) - 2026-03-12
+- Update menu data by @github-actions[bot] in https://github.com/ytkg/komeda/pull/158
+- Simplify release workflow checkout by @ytkg in https://github.com/ytkg/komeda/pull/159
+
 ## [v0.4.30](https://github.com/ytkg/komeda/compare/v0.4.29...v0.4.30) - 2026-03-07
 - Update menu data by @github-actions[bot] in https://github.com/ytkg/komeda/pull/156
 
