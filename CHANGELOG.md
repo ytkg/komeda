@@ -1,3 +1,7 @@
+## [v0.4.32](https://github.com/ytkg/komeda/compare/v0.4.31...v0.4.32) - 2026-03-13
+- Use menu diff as update PR body by @ytkg in https://github.com/ytkg/komeda/pull/161
+- Fix menu item mutation leak by @ytkg in https://github.com/ytkg/komeda/pull/163
+
 ## [v0.4.31](https://github.com/ytkg/komeda/compare/v0.4.30...v0.4.31) - 2026-03-12
 - Update menu data by @github-actions[bot] in https://github.com/ytkg/komeda/pull/158
 - Simplify release workflow checkout by @ytkg in https://github.com/ytkg/komeda/pull/159
