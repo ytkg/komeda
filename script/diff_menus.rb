@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 
-require 'open-uri'
+require 'open3'
 require 'yaml'
 
-def load_menus(source)
-  content = URI.open(source).read # rubocop:disable Security/Open
+BASE_MENUS_PATH = 'HEAD:config/menus.yaml'
+LOCAL_MENUS_PATH = 'config/menus.yaml'
+
+def load_menus(content)
   YAML.safe_load(content, aliases: true, symbolize_names: true)
 end
 
@@ -21,15 +23,34 @@ end
 def print_diff(title, items)
   return if items.empty?
 
-  puts "## #{title}"
+  puts "### #{title}"
   items.each { |item| puts "- #{item}" }
 end
 
-remote_url = 'https://raw.githubusercontent.com/ytkg/komeda/main/config/menus.yaml'
-local_path = 'https://raw.githubusercontent.com/ytkg/komeda/create-pull-request/patch/config/menus.yaml'
+def load_base_menus
+  content, status = Open3.capture2('git', 'show', BASE_MENUS_PATH)
+  raise "Failed to load #{BASE_MENUS_PATH}" unless status.success?
 
-remote_menus = load_menus(remote_url)
-local_menus = load_menus(local_path)
+  load_menus(content)
+end
 
-print_diff('Add', diff_menu_names(remote_menus, local_menus))
-print_diff('Del', diff_menu_names(local_menus, remote_menus))
+def load_local_menus
+  load_menus(File.read(LOCAL_MENUS_PATH))
+end
+
+base_menus = load_base_menus
+local_menus = load_local_menus
+
+added_items = diff_menu_names(base_menus, local_menus)
+deleted_items = diff_menu_names(local_menus, base_menus)
+
+puts 'This PR updates `config/menus.yaml`.'
+puts
+puts '## Menu diff'
+
+if added_items.empty? && deleted_items.empty?
+  puts 'No added or removed menu items were detected.'
+else
+  print_diff('Add', added_items)
+  print_diff('Del', deleted_items)
+end
