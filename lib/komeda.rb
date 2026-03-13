@@ -13,7 +13,7 @@ module Komeda
 
   menus.each_key do |key|
     define_singleton_method(key) do
-      menus[key].map { |item| Komeda::Item[item] }
+      menus[key].map { |item| Komeda::Item[item.deep_dup] }
     end
   end
 end
