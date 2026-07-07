@@ -1053,6 +1053,28 @@ all:
     ※本商品に使用しているチーズは加熱処理済みです。
     ※Kiri®クリームチーズを1食あたり約10％使用しています。
   photo_url: https://assets.komeda.co.jp/eos/menu/45884.jpg
+- &153
+  id: '11771'
+  name: 氷点下ショコラ（単品）
+  description: |-
+    凍ったまま食べるひんやり冷たいショコラケーキ。
+    冷たい口あたりで楽しむショコラの味わい。
+  photo_url: https://assets.komeda.co.jp/eos/menu/46000.jpg
+- &154
+  id: '11773'
+  name: 紅茶日和（単品）
+  description: |-
+    レモンの爽やかな風味とともに華やかに香るアールグレイの優雅な余韻。
+    ※本商品に使用しているチーズは加熱処理済みです。
+    ※原材料由来の黒点などが含まれる場合がございます。
+  photo_url: https://assets.komeda.co.jp/eos/menu/46002.jpg
+- &155
+  id: '11775'
+  name: ご褒美レアチーズ（単品）
+  description: |-
+    芳醇でトロピカルな甘みのアルフォンソマンゴーソースをふわりと口どけのよいレアチーズクリームで。
+    ※本商品に使用しているチーズは加熱処理済みです。
+  photo_url: https://assets.komeda.co.jp/eos/menu/46004.jpg
 drinks:
 - *1
 - *2
@@ -1208,3 +1230,6 @@ desserts:
 - *150
 - *151
 - *152
+- *153
+- *154
+- *155
