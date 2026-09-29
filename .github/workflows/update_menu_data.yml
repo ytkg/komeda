@@ -1,8 +1,6 @@
 name: Update menu data
 
 on:
-  pull_request:
-    branches: [main]
   workflow_dispatch:
   schedule:
     - cron: "0 9 * * *"
@@ -13,7 +11,6 @@ permissions:
 
 jobs:
   update_menu_data:
-    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -43,27 +40,12 @@ jobs:
           PR_NUMBER: ${{ steps.update_pr.outputs.pull-request-number }}
         run: |
           set -euo pipefail
-          enabled=$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER" --jq '.auto_merge != null')
-          if [[ "$enabled" != 'true' ]]; then
-            gh pr merge "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --auto --merge
-          fi
-
-  menu-update-files:
-    if: github.event_name == 'pull_request'
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: read
-    steps:
-      - name: Check menu update files
-        if: github.head_ref == 'create-pull-request/patch' && github.event.pull_request.head.repo.full_name == github.repository
-        env:
-          GH_TOKEN: ${{ github.token }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
-        run: |
-          set -euo pipefail
           files=$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/files" --jq '.[].filename')
           if [[ "$files" != 'config/menus.yaml' ]]; then
             echo "Only config/menus.yaml may change in an auto-merged PR."
             exit 1
+          fi
+          enabled=$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER" --jq '.auto_merge != null')
+          if [[ "$enabled" != 'true' ]]; then
+            gh pr merge "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --auto --merge
           fi
