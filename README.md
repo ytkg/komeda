@@ -68,13 +68,7 @@ Komeda.foods
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. When changes reach `main`, tagpr prepares a release pull request that updates the version and changelog. Merging that pull request creates a version tag and triggers the RubyGems release workflow.
-
-### Automated menu updates
-
-The daily menu update workflow also supports manual runs. It creates a pull request when the upstream menu changes and enables GitHub auto-merge for that pull request. The required `merge-ready` check waits for the existing CI workflow and verifies that menu update pull requests change only `config/menus.yaml`. A failing check leaves the pull request open for review. Release pull requests are not auto-merged.
-
-To enable this, create a fine-grained GitHub personal access token restricted to this repository, with **Contents: Read and write** and **Pull requests: Read and write** permissions. Add it as the Actions repository secret `MENU_UPDATE_TOKEN`. Renew the secret before the token expires. Enable GitHub auto-merge for the repository and require the `merge-ready` status check on `main`. The token lets the update pull request trigger CI and lets the merge trigger the existing release preparation workflow.
+To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 

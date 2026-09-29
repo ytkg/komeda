@@ -1,9 +1,5 @@
 name: ci
 
-permissions:
-  contents: read
-  pull-requests: read
-
 on:
   push:
     branches:
@@ -35,28 +31,3 @@ jobs:
         bundler-cache: true
     - name: Run the default task
       run: bundle exec rake
-
-  merge-ready:
-    needs: [ruby-versions, build]
-    if: always()
-    runs-on: ubuntu-latest
-    steps:
-      - name: Require successful CI
-        env:
-          VERSION_RESULT: ${{ needs.ruby-versions.result }}
-          BUILD_RESULT: ${{ needs.build.result }}
-        run: |
-          test "$VERSION_RESULT" = success
-          test "$BUILD_RESULT" = success
-      - name: Check menu update files
-        if: github.event_name == 'pull_request' && github.head_ref == 'create-pull-request/patch' && github.event.pull_request.head.repo.full_name == github.repository
-        env:
-          GH_TOKEN: ${{ github.token }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
-        run: |
-          set -euo pipefail
-          files=$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/files" --jq '.[].filename')
-          if [[ "$files" != 'config/menus.yaml' ]]; then
-            echo "Only config/menus.yaml may change in an auto-merged PR."
-            exit 1
-          fi
