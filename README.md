@@ -72,9 +72,9 @@ To install this gem onto your local machine, run `bundle exec rake install`. Whe
 
 ### Automated menu updates
 
-The daily menu update workflow also supports manual runs. It creates a pull request when the upstream menu changes. After the existing CI workflow succeeds, the pull request is merged automatically if it changes only `config/menus.yaml` and removes no more than 15% of the existing menu IDs. Otherwise, the pull request stays open for review. Release pull requests are not auto-merged.
+The daily menu update workflow also supports manual runs. It creates a pull request when the upstream menu changes and enables GitHub auto-merge for that pull request. The required `merge-ready` check waits for the existing CI workflow and verifies that menu update pull requests change only `config/menus.yaml`. A failing check leaves the pull request open for review. Release pull requests are not auto-merged.
 
-To enable this, create a fine-grained GitHub personal access token restricted to this repository, with **Contents: Read and write** and **Pull requests: Read and write** permissions. Add it as the Actions repository secret `MENU_UPDATE_TOKEN`. Renew the secret before the token expires. The token lets the update pull request trigger CI and lets the merge trigger the existing release preparation workflow.
+To enable this, create a fine-grained GitHub personal access token restricted to this repository, with **Contents: Read and write** and **Pull requests: Read and write** permissions. Add it as the Actions repository secret `MENU_UPDATE_TOKEN`. Renew the secret before the token expires. Enable GitHub auto-merge for the repository and require the `merge-ready` status check on `main`. The token lets the update pull request trigger CI and lets the merge trigger the existing release preparation workflow.
 
 ## Contributing
 
