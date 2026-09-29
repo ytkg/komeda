@@ -873,34 +873,13 @@ all:
   description: コクあまプリンを自家製珈琲ジェリーと楽しむのがコメダ流
   photo_url: https://assets.komeda.co.jp/eos/menu/45154.jpg
 - &131
-  id: '11731'
-  name: ブランノワール（単品）
-  description: |-
-    とろりとろける練乳、さっぱりソフトクリーム
-    口どけなめらかな粉砂糖で白くミルキーなデザート。
-  photo_url: https://assets.komeda.co.jp/eos/menu/45825.jpg
-- &132
-  id: '11733'
-  name: ブランノワール ミニサイズ（単品）
-  description: |-
-    とろりとろける練乳、さっぱりソフトクリーム
-    口どけなめらかな粉砂糖で白くミルキーなデザート。
-  photo_url: https://assets.komeda.co.jp/eos/menu/45827.jpg
-- &133
-  id: '11735'
-  name: ブランネージュ（単品）
-  description: |-
-    練乳とソフトクリームのミルキーな味わいが
-    ココア香るバウムクーヘンにぴったり。
-  photo_url: https://assets.komeda.co.jp/eos/menu/45829.jpg
-- &134
   id: '11771'
   name: 氷点下ショコラ（単品）
   description: |-
     凍ったまま食べるひんやり冷たいショコラケーキ。
     冷たい口あたりで楽しむショコラの味わい。
   photo_url: https://assets.komeda.co.jp/eos/menu/46000.jpg
-- &135
+- &132
   id: '11773'
   name: 紅茶日和（単品）
   description: |-
@@ -908,7 +887,7 @@ all:
     ※本商品に使用しているチーズは加熱処理済みです。
     ※原材料由来の黒点などが含まれる場合がございます。
   photo_url: https://assets.komeda.co.jp/eos/menu/46002.jpg
-- &136
+- &133
   id: '11775'
   name: ご褒美レアチーズ（単品）
   description: |-
@@ -1060,6 +1039,3 @@ desserts:
 - *131
 - *132
 - *133
-- *134
-- *135
-- *136
