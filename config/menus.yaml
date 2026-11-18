@@ -879,14 +879,6 @@ all:
   name: 珈琲所のプリン（単品）
   description: コクあまプリンを自家製珈琲ジェリーと楽しむのがコメダ流
   photo_url: https://assets.komeda.co.jp/eos/menu/45154.jpg
-- &126
-  id: '11814'
-  name: お好み焼バーガー
-  description: |-
-    ふわふわのバンズでお好み焼をサンド。キャベツの食感、ソースのコクに、たっぷりのかつおぶし。
-    お好み焼の旨みをしっかり楽しめる一品。
-    ※エッグオムレツは加熱加工しており、半熟のような食感を再現しています。
-  photo_url: https://assets.komeda.co.jp/eos/menu/46204.jpg
 - &134
   id: '11819'
   name: シロノワール キャラメルアップル（単品）
@@ -935,13 +927,14 @@ all:
     香ばしくてほろ苦い大人の味わい
     ※トッピングに砕いたアーモンドを使用しています。
   photo_url: https://assets.komeda.co.jp/eos/menu/46460.jpg
-- &139
-  id: '11837'
-  name: フローラルチョコムース（単品）
+- &126
+  id: '11839'
+  name: ムッシュコメダ
   description: |-
-    華やかなカカオの香りと奥深い味わいが広がる、なめらかな口どけのチョコムース
-    ※THE Cacao PROFESSIONALS FLORALはムース部分に使用しています。
-  photo_url: https://assets.komeda.co.jp/eos/menu/46461.jpg
+    とろけるチーズとホワイトソース、ペッパーポークを挟んだクロックムッシュ。
+    ピリッと黒胡椒が効いた一品。
+    ※本商品に使用しているチーズは加熱処理済みです。
+  photo_url: https://assets.komeda.co.jp/eos/menu/46479.jpg
 drinks:
 - *1
 - *2
@@ -1083,4 +1076,3 @@ desserts:
 - *136
 - *137
 - *138
-- *139
